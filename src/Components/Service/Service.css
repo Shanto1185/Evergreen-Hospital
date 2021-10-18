@@ -1,0 +1,10 @@
+.card-style {
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.card-style:hover{
+    box-shadow: 10px 10px 15px rgb(68, 67, 67),
+                 -10px -10px 10px white;
+}
