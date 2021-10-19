@@ -1,0 +1,11 @@
+.details-img {
+    max-height: 400px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.signle-details{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

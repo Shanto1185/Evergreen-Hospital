@@ -7,10 +7,15 @@ import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Doctors from './Components/Doctors/Doctors';
 import SignUp from './Components/SignUp/SignUp';
+import AuthProvider from './Context/AuthProvider';
+import Footer from './Components/Footer/Footer';
+import PrivateRote from './Components/PrivateRoute/PrivateRoute'
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
         <Header></Header>
         <Switch>
@@ -26,17 +31,22 @@ function App() {
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
-          <Route path="/details/:id">
-            <Details></Details>
-          </Route>
+            <PrivateRote path="/details/:id">
+                <Details></Details>
+            </PrivateRote>
           <Route path="/login">
             <Login></Login>
           </Route>
           <Route path="/signup">
             <SignUp></SignUp>
           </Route>
-        </Switch>
+          <Route path="*">
+              <NotFound></NotFound>
+          </Route>
+          </Switch>
+          <Footer></Footer>
       </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

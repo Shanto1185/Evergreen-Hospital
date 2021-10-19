@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/usefirebase';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { googleSignIn,handleLogIn,handleEmail,handlePassword} = useFirebase();
+    const { googleSignIn,handleLogIn,handleEmail,handlePassword} = useAuth();
     return (
         <div className="containerm mt-5">
             <h1 className="text-primary text-center fw-bold my-5">Login</h1>
