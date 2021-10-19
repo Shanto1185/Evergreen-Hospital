@@ -8,10 +8,9 @@ const Doctor = (props) => {
                 <div className="card">
                     <img src={img}className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                        <p className="card-text">{experts}</p>
-                        <p>{day}</p>
-                </div>
+                    <h3 className="card-title fw-bold text-danger">{name}</h3>
+                        <h5 className="card-text fe-bold">{experts}</h5>
+                        <p className="card-text">Available on : {day}</p>                </div>
                 </div>
             </div>
         </div>

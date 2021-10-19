@@ -14,7 +14,7 @@ const Details = () => {
     }, [])
 
     useEffect(() => {
-        const found = serviceDetails.find(d => d.id == id)
+        const found = serviceDetails.find(detail => detail.id == id)
         setSinglePerson(found);
     }, [serviceDetails, id])
 
@@ -22,13 +22,15 @@ const Details = () => {
     return (
         <div> 
             <div className="">
-            <h1>Service Details</h1>
+            <h1 className="my-5 fw-bold"><span className="text-primary">Service</span> Details</h1>
                 <div className="col signle-details">
                     <div className="signle-details card">
                         <img src={singlePerson?.img} className="details-img card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">{singlePerson?.name}</h5>
-                            <p className="card-text"> {singlePerson?.description}</p>
+                            <h2 className="card-title fw-bold text-primary">{singlePerson?.name}</h2>
+                            <p className="card-text fw-bold">Details:{singlePerson?.description}</p>
+                            <p className="card-text fw-bold">Cost: {singlePerson?.cost}</p>
+                            <p className="card-text fw-bold">It will take: {singlePerson?.time}</p>
                         </div>
                     </div>
                 </div>
