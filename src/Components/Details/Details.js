@@ -20,9 +20,9 @@ const Details = () => {
 
 
     return (
-        <div> 
+        <div>
             <div className="">
-            <h1 className="my-5 fw-bold"><span className="text-primary">Service</span> Details</h1>
+                <h1 className="my-5 fw-bold"><span className="text-primary">Service</span> Details</h1>
                 <div className="col signle-details">
                     <div className="signle-details card">
                         <img src={singlePerson?.img} className="details-img card-img-top" alt="..." />
