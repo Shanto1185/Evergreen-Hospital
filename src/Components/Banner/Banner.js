@@ -12,7 +12,7 @@ const Banner = () => {
 
                             <div>
                                 <Fade left>
-                                    <h1 className="text-dark">Welcome To EverGreen</h1>
+                                    <h1 className="text-dark">Evergreen Hospital</h1>
                                     <h3 className="text-dark">Hospital & Clinic</h3>
                                 </Fade>
                             </div>
